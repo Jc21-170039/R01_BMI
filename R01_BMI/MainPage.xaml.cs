@@ -19,13 +19,14 @@ namespace R01_BMI
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender,EventArgs e){
+        private void Button_Clicked(object sender,EventArgs e)
+        {
         
 
-            CM=double.Parse(cm.Text)/100;
-            KG=double.Parse(kg.Text);
+            cm=double.Parse(cm.Text)/100;
+            kg=double.Parse(kg.Text);
 
-            BMI=Math.Round(kg/(cm*cm));
+            bmi=Math.Round(kg/(cm*cm));
 
             BMI.text=bmi.ToString();
         }
